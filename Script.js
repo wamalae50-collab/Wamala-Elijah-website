@@ -1,0 +1,30 @@
+// Wait until the page is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Get the current page filename
+    const page = window.location.pathname.split("/").pop();
+
+    // Show alert based on the page
+    if(page === "home.html") {
+        alert("Welcome to Wamala Elijah's Home Page!");
+    } 
+    else if(page === "about.html") {
+        alert("Get to know Wamala Elijah on the About Page!");
+    } 
+    else if(page === "education.html") {
+        alert("Check out Wamala Elijah's Education & Academic Achievements!");
+    } 
+    else if(page === "gallery.html") {
+        alert("Explore the Gallery of Wamala Elijah's Work & Interests!");
+    } 
+    else if(page === "contact.html") {
+        alert("Feel free to contact Wamala Elijah!");
+    }
+
+    // Example: Back to Top button hover (works on all pages)
+    const backBtn = document.querySelector('a[href="#top"]');
+    if(backBtn) {
+        backBtn.addEventListener('mouseover', () => backBtn.style.backgroundColor = 'darkred');
+        backBtn.addEventListener('mouseout', () => backBtn.style.backgroundColor = 'navy');
+    }
+});

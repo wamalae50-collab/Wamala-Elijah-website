@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: darkgreen;
+}
+
+header, section, footer {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 128, 0.85);
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: darkred;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: gold;
+}
+
+a[href="#top"] {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: navy;
+    color: gold;
+}
+
+a[href="#top"]:hover {
+    background-color: darkred;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: navy;
+}
+
+nav a:hover {
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+}
+
+body.home {
+    background: url("Gallery/Research2.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.about {
+    background: url("Gallery/IMG-20211113-WA0004.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.education {
+    background: url("Gallery/IMG-20210923-WA0070.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.gallery {
+    background: url("Gallery/FB_IMG_1630429992221.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.contact {
+    background: url("Gallery/FB_IMG_1631098490347.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.gallery img, body.gallery video {
+    border-radius: 8px;
+    margin: 10px;
+    border: 3px solid navy;
+    transition: transform 0.3s ease;
+}
+
+body.gallery img:hover, body.gallery video:hover {
+    transform: scale(1.05);
+    border-color: darkred;
+}
+
+body.contact form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+body.contact input[type="text"],
+body.contact input[type="email"],
+body.contact input[type="password"],
+body.contact textarea,
+body.contact select {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+body.contact input[type="submit"] {
+    background-color: navy;
+    color: gold;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.contact input[type="submit"]:hover {
+    background-color: darkred;
+}
