@@ -52,6 +52,8 @@ a[href="#top"] {
     margin: 10px 0;
     background-color: navy;
     color: gold;
+    position: relative;
+    z-index: 3;
 }
 
 a[href="#top"]:hover {
@@ -121,6 +123,7 @@ body.contact::before {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     z-index: 1;
+    pointer-events:none;
 }
 
 body.gallery img, body.gallery video {
@@ -171,5 +174,6 @@ body.contact input[type="submit"] {
 body.contact input[type="submit"]:hover {
     background-color: darkred;
 }
+
 
 
