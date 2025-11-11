@@ -3,12 +3,15 @@ body {
     margin: 0;
     padding: 0;
     color: darkgreen;
+    position: relative;
 }
 
 header, section, footer {
     padding: 15px;
     border-radius: 8px;
     margin: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 header {
@@ -72,29 +75,52 @@ nav a:hover {
     border-radius: 5px;
 }
 
-body.home {
-    background: url("Gallery/Research2.jpeg") no-repeat center center fixed;
+body.index, body.about, body.education, body.gallery, body.contact {
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body.index {
+    background-color: #e0f7fa;
+    background-image: url("Gallery/Research2.jpeg");
 }
 
 body.about {
-    background: url("Gallery/IMG-20211113-WA0004.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #fff3e0;
+    background-image: url("Gallery/IMG-20211113-WA0004.jpg");
 }
 
 body.education {
-    background: url("Gallery/IMG-20210923-WA0070.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #f1f8e9;
+    background-image: url("Gallery/IMG-20210923-WA0070.jpg");
 }
 
 body.gallery {
-    background: url("Gallery/FB_IMG_1630429992221.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #fce4ec;
+    background-image: url("Gallery/FB_IMG_1630429992221.jpg");
 }
 
 body.contact {
-    background: url("Gallery/FB_IMG_1631098490347.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #e8eaf6;
+    background-image: url("Gallery/FB_IMG_1631098490347.jpg");
+}
+
+body.index::before, 
+body.about::before, 
+body.education::before, 
+body.gallery::before, 
+body.contact::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
 }
 
 body.gallery img, body.gallery video {
@@ -116,6 +142,8 @@ body.contact form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
+    position: relative;
+    z-index: 2;
 }
 
 body.contact input[type="text"],
