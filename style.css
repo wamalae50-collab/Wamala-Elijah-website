@@ -75,7 +75,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-body.index, body.about, body.education, body.gallery, body.contact {
+body.home, body.about, body.education, body.gallery, body.contact {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,7 +83,7 @@ body.index, body.about, body.education, body.gallery, body.contact {
     position: relative;
 }
 
-body.index {
+body.home {
     background-color: #e0f7fa;
     background-image: url("Gallery/Research2.jpeg");
 }
@@ -108,7 +108,7 @@ body.contact {
     background-image: url("Gallery/FB_IMG_1631098490347.jpg");
 }
 
-body.index::before, 
+body.home::before, 
 body.about::before, 
 body.education::before, 
 body.gallery::before, 
@@ -171,4 +171,5 @@ body.contact input[type="submit"] {
 body.contact input[type="submit"]:hover {
     background-color: darkred;
 }
+
 
