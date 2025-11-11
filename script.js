@@ -1,10 +1,7 @@
-// Wait until the page is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Get the current page filename
     const page = window.location.pathname.split("/").pop();
 
-    // Show alert based on the page
     if(page === "home.html") {
         alert("Welcome to Wamala Elijah's Home Page!");
     } 
@@ -21,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Feel free to contact Wamala Elijah!");
     }
 
-    // Example: Back to Top button hover (works on all pages)
     const backBtn = document.querySelector('a[href="#top"]');
     if(backBtn) {
         backBtn.addEventListener('mouseover', () => backBtn.style.backgroundColor = 'darkred');
         backBtn.addEventListener('mouseout', () => backBtn.style.backgroundColor = 'navy');
     }
 });
+
