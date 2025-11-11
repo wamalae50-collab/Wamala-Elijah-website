@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const page = window.location.pathname.split("/").pop();
 
-    if(page === "home.html") {
+    if(page === "home.html" || page === "index.html") {
         alert("Welcome to Wamala Elijah's Home Page!");
     } 
     else if(page === "about.html") {
@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const backBtn = document.querySelector('a[href="#top"]');
     if(backBtn) {
+        backBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
         backBtn.addEventListener('mouseover', () => backBtn.style.backgroundColor = 'darkred');
         backBtn.addEventListener('mouseout', () => backBtn.style.backgroundColor = 'navy');
     }
 });
-
